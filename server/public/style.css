@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#map {
+    width: 100%;
+    height: 100vh;
+}
+ 
+
+
+
+
+
+ul { cursor: pointer;
+ }
+.here{
+text-decoration: none;
+background-color: blue;
+border: red solid 3px;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background: #1e1e24;
+    align-items: center;
+    justify-content: center;
+}
+.btn-flip {
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+}
+.btn-flip:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+.btn-flip:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+}
+.btn-flip:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: #323237;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: #adadaf;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+}
+.btn-flip:before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #adadaf;
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    transition: 0.5s;
+    position: relative;
+    background: #323237;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+}
+
+
+
+
+.innerulist{
+padding-top: 7px;
+padding-bottom: 7px;
+padding-left: 7px;
+}
+.innerulist:hover{
+background-color:grey;
+opacity: 0.5;
+color: #efefef
+}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: #644bff;
+  padding: 0 20px;
+}
+.search-suggestions{
+  width: 60vw;
+  height: 4vh;
+}
+::selection{
+  color: #fff;
+  background: #664AFF;
+}
+
+.wrapper{
+  max-width: 450px;
+  margin: 0px auto;
+}
+
+.wrapper .search-input{
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+
+.search-input input{
+  height: 50px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .result{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.search-input.active .result{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.result li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input.active .result li{
+  display: block;
+}
+.autocom-box li:hover{
+  background: #efefef;
+}
+
+.search-input .icon{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 5.5vh;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: gray;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.search-input .icon:hover{
+  
+  color: blue;
+  
+}
+
+
+
+.leaflet-routing-container{
+  top: 70vh;
+  right: 20vw;
+  z-index: 999;
+  
+}
+
+
+.leaflet-routing-alt-minimized {
+  color: #888;
+  max-height: 40px;
+  overflow-x: hidden;
+  cursor: pointer;
+  z-index: 999;
+  
+}
+
+.leaflet-routing-alt {
+ 
+  width: 70vw;
+  border-bottom: 1px solid #ccc;
+  height: 15vh;
+  overflow-y: auto;
+  z-index: 999;
+  transition: all 0.2s ease;
+}

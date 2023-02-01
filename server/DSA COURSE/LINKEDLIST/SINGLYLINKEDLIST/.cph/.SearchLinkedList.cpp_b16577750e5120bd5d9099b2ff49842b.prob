@@ -1,0 +1,1 @@
+{"name":"Local: SearchLinkedList","url":"d:\\DSA COURSE\\LINKEDLIST\\SINGLYLINKEDLIST\\SearchLinkedList.cpp","tests":[{"id":1670497918533,"input":"7\n1\n2\n3\n4\n6\n7\n5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\DSA COURSE\\LINKEDLIST\\SINGLYLINKEDLIST\\SearchLinkedList.cpp","group":"local","local":true}
